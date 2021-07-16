@@ -34,7 +34,7 @@ usuario.get("/usuario/:id",Login,Refresh, async(req, res)=>{
 });
  
 usuario.put("/usuario/:id", async(req, res)=>{
-    const response = await u.update(req, req.params.id);
+    const response = await u.update(req, req.params.id); 
 
     res.status(response.status).send(response.data);
 });
